@@ -52,4 +52,9 @@ public class PokemonController {
         return new ResponseEntity<>(locations, HttpStatus.OK);
     }
 
+    @GetMapping
+    public ResponseEntity<String> defaultLocation() {
+        return new ResponseEntity<>("Missing Location", HttpStatus.OK);
+    }
+
 }
